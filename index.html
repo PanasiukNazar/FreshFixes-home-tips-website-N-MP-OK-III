@@ -57,6 +57,50 @@
             href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800"
             rel="stylesheet"
         />
+        <style>
+            #mu-slider {
+                position: relative;
+                height: 750px;
+            }
+            .mu-single-slide {
+                position: relative;
+                height: 750px;
+            }
+            .mu-single-slide img {
+                width: 100%;
+                height: auto;
+                display: block;
+                height: 750px;
+            }
+            .mu-single-slide-content-area {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                /* Background overlay with opacity */
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                align-items: center;
+            }
+            .mu-single-slide-content {
+                color: #fff;
+                max-width: 700px;
+                margin: auto;
+                padding: 30px;
+                font-size: 1.25rem; /* slightly larger text */
+                line-height: 1.6;
+                font-weight: 500;
+            }
+            .mu-single-slide-content h1 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+            .mu-single-slide-content p {
+                font-size: 1.25rem;
+            }
+        </style>
     </head>
     <body>
         <!--START SCROLL TOP BUTTON -->
@@ -114,7 +158,6 @@
         </header>
         <!-- End Header -->
 
-        <!-- Start slider area -->
         <div id="mu-slider">
             <div class="mu-slide">
                 <!-- Start single slide  -->
@@ -143,64 +186,74 @@
                     </div>
                 </div>
                 <!-- End single slide  -->
-
-                <!-- Start single slide  -->
-                <div class="mu-single-slide">
-                    <img
-                        src="assets/images/slider-img-2.jpg"
-                        alt="slider img"
-                    />
-                    <div class="mu-single-slide-content-area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mu-single-slide-content">
-                                        <h1>Советы по уборке</h1>
-                                        <p>
-                                            Узнайте о простых и эффективных
-                                            способах уборки, которые помогут
-                                            поддерживать чистоту в доме без
-                                            лишних усилий и затрат времени.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End single slide  -->
-
-                <!-- Start single slide  -->
-                <div class="mu-single-slide">
-                    <img
-                        src="assets/images/slider-img-3.jpg"
-                        alt="slider img"
-                    />
-                    <div class="mu-single-slide-content-area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mu-single-slide-content">
-                                        <h1>Быстрый ремонт и уход</h1>
-                                        <p>
-                                            Получите знания о простых способах
-                                            мелкого ремонта и ухода за домом,
-                                            которые помогут продлить срок службы
-                                            ваших вещей и оборудования.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End single slide  -->
             </div>
         </div>
         <!-- End Slider area -->
 
         <!-- Start main content -->
         <main>
+            <!-- Start Counter -->
+            <section id="mu-counter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mu-counter-area">
+                                <div class="mu-counter-block">
+                                    <div class="row">
+                                        <!-- Start Single Counter -->
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="mu-single-counter">
+                                                <span
+                                                    class="fa fa-calendar"
+                                                ></span>
+                                                <div
+                                                    class="mu-single-counter-content"
+                                                >
+                                                    <div
+                                                        class="counter-value"
+                                                        data-count="150"
+                                                    >
+                                                        150
+                                                    </div>
+                                                    <h5 class="mu-counter-name">
+                                                        Опубликованных советов
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Single Counter -->
+
+                                        <!-- Start Single Counter -->
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="mu-single-counter">
+                                                <span
+                                                    class="fa fa-users"
+                                                ></span>
+                                                <div
+                                                    class="mu-single-counter-content"
+                                                >
+                                                    <div
+                                                        class="counter-value"
+                                                        data-count="12000"
+                                                    >
+                                                        12000
+                                                    </div>
+                                                    <h5 class="mu-counter-name">
+                                                        Читателей и
+                                                        последователей
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Single Counter -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Counter -->
             <!-- Start About -->
             <section id="mu-about">
                 <div class="container">
@@ -346,268 +399,6 @@
                 </div>
             </div>
             <!-- End Call to Action -->
-
-            <!-- Start Portfolio -->
-            <section id="mu-portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mu-portfolio-area">
-                                <!-- Title -->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="mu-title">
-                                            <h2>
-                                                Примеры полезных советов и
-                                                методов
-                                            </h2>
-                                            <p>
-                                                Ознакомьтесь с наглядными
-                                                примерами и иллюстрациями
-                                                эффективных способов
-                                                организации, уборки и мелкого
-                                                ремонта. Практические
-                                                рекомендации помогут внедрить
-                                                знания в повседневную жизнь.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <!-- Start Portfolio Content -->
-                                    <div
-                                        class="col-xs-6 col-sm-6 col-md-4 filtr-item"
-                                        data-category="1"
-                                    >
-                                        <a
-                                            class="mu-imglink"
-                                            href="assets/images/portfolio/img-1.jpg"
-                                        >
-                                            <img
-                                                class="img-responsive"
-                                                src="assets/images/portfolio/img-1.jpg"
-                                                alt="image"
-                                            />
-                                            <div class="mu-filter-item-content">
-                                                <h4
-                                                    class="mu-filter-item-title"
-                                                >
-                                                    Организация хранения и
-                                                    порядок
-                                                </h4>
-                                                <span
-                                                    class="fa fa-long-arrow-right"
-                                                ></span>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div
-                                        class="col-xs-6 col-sm-6 col-md-4 filtr-item"
-                                        data-category="2"
-                                    >
-                                        <a
-                                            class="mu-imglink"
-                                            href="assets/images/portfolio/img-2.jpg"
-                                        >
-                                            <img
-                                                class="img-responsive"
-                                                src="assets/images/portfolio/img-2.jpg"
-                                                alt="image"
-                                            />
-                                            <div class="mu-filter-item-content">
-                                                <h4
-                                                    class="mu-filter-item-title"
-                                                >
-                                                    Методики быстрой и
-                                                    качественной уборки
-                                                </h4>
-                                                <span
-                                                    class="fa fa-long-arrow-right"
-                                                ></span>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div
-                                        class="col-xs-6 col-sm-6 col-md-4 filtr-item"
-                                        data-category="3"
-                                    >
-                                        <a
-                                            class="mu-imglink"
-                                            href="assets/images/portfolio/img-3.jpg"
-                                        >
-                                            <img
-                                                class="img-responsive"
-                                                src="assets/images/portfolio/img-3.jpg"
-                                                alt="image"
-                                            />
-                                            <div class="mu-filter-item-content">
-                                                <h4
-                                                    class="mu-filter-item-title"
-                                                >
-                                                    Простые ремонты и уход за
-                                                    домом
-                                                </h4>
-                                                <span
-                                                    class="fa fa-long-arrow-right"
-                                                ></span>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div
-                                        class="col-xs-6 col-sm-6 col-md-4 filtr-item"
-                                        data-category="4"
-                                    >
-                                        <a
-                                            class="mu-imglink"
-                                            href="assets/images/portfolio/img-4.jpg"
-                                        >
-                                            <img
-                                                class="img-responsive"
-                                                src="assets/images/portfolio/img-4.jpg"
-                                                alt="image"
-                                            />
-                                            <div class="mu-filter-item-content">
-                                                <h4
-                                                    class="mu-filter-item-title"
-                                                >
-                                                    Советы по уборке в
-                                                    труднодоступных местах
-                                                </h4>
-                                                <span
-                                                    class="fa fa-long-arrow-right"
-                                                ></span>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div
-                                        class="col-xs-6 col-sm-6 col-md-4 filtr-item"
-                                        data-category="5"
-                                    >
-                                        <a
-                                            class="mu-imglink"
-                                            href="assets/images/portfolio/img-5.jpg"
-                                        >
-                                            <img
-                                                class="img-responsive"
-                                                src="assets/images/portfolio/img-5.jpg"
-                                                alt="image"
-                                            />
-                                            <div class="mu-filter-item-content">
-                                                <h4
-                                                    class="mu-filter-item-title"
-                                                >
-                                                    Экологичные средства для
-                                                    уборки
-                                                </h4>
-                                                <span
-                                                    class="fa fa-long-arrow-right"
-                                                ></span>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div
-                                        class="col-xs-6 col-sm-6 col-md-4 filtr-item"
-                                        data-category="6"
-                                    >
-                                        <a
-                                            class="mu-imglink"
-                                            href="assets/images/portfolio/img-6.jpg"
-                                        >
-                                            <img
-                                                class="img-responsive"
-                                                src="assets/images/portfolio/img-6.jpg"
-                                                alt="image"
-                                            />
-                                            <div class="mu-filter-item-content">
-                                                <h4
-                                                    class="mu-filter-item-title"
-                                                >
-                                                    Организация пространства в
-                                                    маленькой квартире
-                                                </h4>
-                                                <span
-                                                    class="fa fa-long-arrow-right"
-                                                ></span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- End Portfolio Content -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End Portfolio -->
-
-            <!-- Start Counter -->
-            <section id="mu-counter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mu-counter-area">
-                                <div class="mu-counter-block">
-                                    <div class="row">
-                                        <!-- Start Single Counter -->
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="mu-single-counter">
-                                                <span
-                                                    class="fa fa-calendar"
-                                                ></span>
-                                                <div
-                                                    class="mu-single-counter-content"
-                                                >
-                                                    <div
-                                                        class="counter-value"
-                                                        data-count="150"
-                                                    >
-                                                        150
-                                                    </div>
-                                                    <h5 class="mu-counter-name">
-                                                        Опубликованных советов
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- / Single Counter -->
-
-                                        <!-- Start Single Counter -->
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="mu-single-counter">
-                                                <span
-                                                    class="fa fa-users"
-                                                ></span>
-                                                <div
-                                                    class="mu-single-counter-content"
-                                                >
-                                                    <div
-                                                        class="counter-value"
-                                                        data-count="12000"
-                                                    >
-                                                        12000
-                                                    </div>
-                                                    <h5 class="mu-counter-name">
-                                                        Читателей и
-                                                        последователей
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- / Single Counter -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End Counter -->
 
             <!-- Start from blog -->
             <section id="mu-from-blog">

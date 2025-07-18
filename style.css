@@ -570,7 +570,6 @@ a:focus,
 /*--------------------*/
 
 #mu-call-to-action {
-    background-image: url(assets/images/call-to-action-bg.jpg);
     float: left;
     position: relative;
     width: 100%;
@@ -919,7 +918,6 @@ a:focus,
 /*--------------------*/
 
 #mu-counter {
-    background-image: url('assets/images/counter-bg.jpg');
     background-size: cover;
     display: inline;
     float: left;
@@ -1164,7 +1162,6 @@ a:focus,
 /*--------------------*/
 
 #mu-testimonials {
-    background-image: url('assets/images/testimonial-bg.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -1175,7 +1172,7 @@ a:focus,
 }
 
 #mu-testimonials::before {
-    background: #97bc62ff;
+    background: #000000;
     bottom: 0;
     content: '';
     left: 0;
